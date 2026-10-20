@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- lang attribute helps screen readers and search engines -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- SEO: unique title and description -->
+<title>Shivanshi Srivastava | Backend Developer Portfolio</title>
+<meta name="description" content="Portfolio of Shivanshi Srivastava, a B.Tech CSE (AI/ML) student building backend projects with Python, MySQL and C++.">
+<meta name="author" content="Shivanshi Srivastava">
+<meta name="robots" content="index, follow">
+
+<!-- SEO: Open Graph tags for link previews -->
+<meta property="og:title" content="Shivanshi Srivastava | Backend Developer">
+<meta property="og:description" content="Backend projects built with Python, FastAPI and MySQL.">
+<meta property="og:type" content="website">
+
+<style>
+body { font-family: Arial, sans-serif; line-height: 1.6; color: #222; margin: 0; }
+header, main, footer { max-width: 760px; margin: 0 auto; padding: 16px; }
+header { border-bottom: 2px solid #5b3a8c; }
+nav ul { display: flex; gap: 16px; list-style: none; padding: 0; }
+a { color: #3d2466; }                      /* good colour contrast */
+a:focus, input:focus, textarea:focus, button:focus { outline: 3px solid #e0a100; }
+.skip-link { position: absolute; left: -999px; }
+.skip-link:focus { left: 8px; top: 8px; background: #fff; padding: 6px; }
+label { display: block; margin-top: 10px; font-weight: bold; }
+input, textarea { width: 100%; padding: 8px; }
+footer { text-align: center; color: #444; }
+</style>
+</head>
+<body>
+
+<!-- Accessibility: skip link for keyboard users -->
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- Semantic HTML: header, nav, main, section, article, footer -->
+<header>
+<h1>Shivanshi Srivastava</h1>
+<p>Backend Developer | B.Tech CSE (AI/ML)</p>
+<nav aria-label="Main navigation">
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main id="main-content">
+<!-- Proper heading structure: one h1, then h2 for sections, h3 for items -->
+<section id="about" aria-labelledby="about-heading">
+<h2 id="about-heading">About Me</h2>
+<p>I am a second year B.Tech student who builds backend projects using
+Python, MySQL and C++.</p>
+</section>
+
+<section id="projects" aria-labelledby="projects-heading">
+<h2 id="projects-heading">Projects</h2>
+<article>
+<h3>SpotSync</h3>
+<p>A smart parking platform with a React frontend and a FastAPI backend.</p>
+<!-- Descriptive link text instead of "click here" -->
+<a href="https://spot-sync-seven.vercel.app">Open the SpotSync live demo</a>
+</article>
+<article>
+<h3>CelestIQ</h3>
+<p>A decision-support prototype for satellite collision avoidance.</p>
+<a href="https://celest-iq-chi.vercel.app">Open the CelestIQ live demo</a>
+</article>
+</section>
+
+<section id="contact" aria-labelledby="contact-heading">
+<h2 id="contact-heading">Contact</h2>
+<form action="mailto:shivanshi.sri388@gmail.com" method="post" enctype="text/plain">
+<!-- Every input has a matching label -->
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required>
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="4" required></textarea>
+<button type="submit">Send</button>
+</form>
+</section>
+</main>
+
+<footer>
+<p>&copy; 2026 Shivanshi Srivastava</p>
+</footer>
+
+</body>
+</html>
